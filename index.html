@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Магазин экологически чистых продуктов</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="page-bg"></div>
+
+  <header>
+    <nav class="top-nav">
+      <ul>
+        <li><a href="#" class="nav-btn active">Главная</a></li>
+        <li><a href="shop.html" class="nav-btn">Магазин</a></li>
+        <li><a href="ForumGl.html" class="nav-btn">Форум</a></li>
+        <li><a href="News.html" class="nav-btn">Новости</a></li>
+      </ul>
+      <a href="basket.html" class="cart-btn">
+        <img src="img/тележка.png" alt="Корзина">
+      </a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="banner">
+      <a href="#">
+        <img src="img/баннер.png" alt="Баннер">
+      </a>
+    </section>
+
+    <section class="search-bar">
+        <div class="search-container">
+    		<input type="text" class="search-input" placeholder="Поиск...">
+    		<button class="search-clear-btn" type="button">×</button>
+  	</div>
+      <button class="btn-icon search-btn">
+        <img src="img/лупа.png" alt="Найти">
+      </button>
+      <button class="btn-filter">Фильтр</button>
+      <a href="shop.html" class="btn-filter grid-icon" aria-label="Сетка">
+        <span></span><span></span><span></span>
+        <span></span><span></span><span></span>
+        <span></span><span></span><span></span>
+      </a>
+      <a href="#" class="btn-filter list-icon" aria-label="Список">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+    </section>
+
+    <section class="products">
+      <!-- 1 -->
+      <div class="product-card" data-base-old="3220" data-base-new="1330">
+        <div class="product-img">
+          <div class="img-wrapper" data-images="img/орехи.jpg, img/7146515936.webp">
+            <img src="img/орехи.jpg" alt="Ядро кедрового ореха">
+            <img src="img/40.png" alt="Скидка" class="discount-badge">
+            <div class="carousel-buttons">
+              <span class="carousel-btn active" data-index="0"></span>
+              <span class="carousel-btn" data-index="1"></span>
+            </div>
+          </div>
+        </div>
+        <div class="product-desc">
+          <h2>Ядро кедрового ореха, 300 г</h2>
+          <ul>
+            <li>Бренд — Сибирский кедр</li>
+            <li>Пищевая ценность: 16 белки 56 жиры 24 углеводы 660 ккал.</li>
+            <li>Срок годности: 6 месяцев</li>
+            <a href="#" class="Tochka">...</a>
+          </ul>
+        </div>
+        <div class="product-meta">
+          <div class="price-container">
+            <span class="old">2 220 ₽</span>
+            <span class="new">1 330 ₽</span>
+          </div>
+          <div class="qty-container">
+            <div class="qty-number">1</div>
+            <div class="qty-buttons">
+              <button class="qty-btn minus">−</button>
+              <button class="qty-btn plus">+</button>
+            </div>
+            <a href="registration.html"><button class="add-to-cart-btn">Добавить в корзину</button></a>
+          </div>
+        </div>
+      </div>
+      <!-- 2 -->
+      <div class="product-card" data-base-old="480" data-base-new="360">
+        <div class="product-img">
+          <div class="img-wrapper" data-images="img/bepjnwre42ov7qb1dk3v2bspeqblosb1.jpg, img/eueac9e2wv146i1bmu7uy2n3jv51v7fx.jpg, img/901l1c7tp2p9shn8drjbwjjxmc596av8.jpg">
+            <img src="img/bepjnwre42ov7qb1dk3v2bspeqblosb1.jpg" alt=""Чайные листья" горный Крым">
+            <img src="img/25.png" alt="Скидка" class="discount-badge">
+            <div class="carousel-buttons">
+              <span class="carousel-btn active" data-index="0"></span>
+              <span class="carousel-btn" data-index="1"></span>
+              <span class="carousel-btn" data-index="2"></span>
+            </div>
+          </div>
+        </div>
+        <div class="product-desc">
+          <h2>"Чайные листья" горный Крым</h2>
+          <ul>
+            <li>Страна производства - Россия</li>
+            <li>Состав:	ферментированные листья вишни, груши, ежевики, цветы розы, подсолнечника, рудбекии.</li>
+            <li>Срок хранения	2 года</li>
+            <a href="#" class="Tochka">...</a>
+          </ul>
+        </div>
+        <div class="product-meta">
+          <div class="price-container">
+            <span class="old">480 ₽</span>
+            <span class="new">360 ₽</span>
+          </div>
+          <div class="qty-container">
+            <div class="qty-number">1</div>
+            <div class="qty-buttons">
+              <button class="qty-btn minus">−</button>
+              <button class="qty-btn plus">+</button>
+            </div>
+            <a href="registration.html"><button class="add-to-cart-btn">Добавить в корзину</button></a>
+          </div>
+        </div>
+      </div>
+      <!-- 3 -->
+      <div class="product-card" data-base-old="600" data-base-new="360">
+        <div class="product-img">
+          <div class="img-wrapper" data-images="img/6799054703.webp, img/7303955567.webp">
+            <img src="img/6799054703.webp" alt="Земляника в молочном шоколаде без сахара, 100 г">
+            <img src="img/40.png" alt="Скидка" class="discount-badge">
+            <div class="carousel-buttons">
+              <span class="carousel-btn active" data-index="0"></span>
+              <span class="carousel-btn" data-index="1"></span>
+            </div>
+          </div>
+        </div>
+        <div class="product-desc">
+          <h2>Земляника в молочном шоколаде без сахара, 100 г</h2>
+          <ul>
+            <li>Бренд — Сибирский кедр</li>
+            <li>Пищевая ценность: 4 белки 26 жиры 55 углеводы 470 ккал</li>
+            <li>Срок годности: 6 месяцев</li>
+            <a href="#" class="Tochka">...</a>
+          </ul>
+        </div>
+        <div class="product-meta">
+          <div class="price-container">
+            <span class="old">600 ₽</span>
+            <span class="new">360 ₽</span>
+          </div>
+          <div class="qty-container">
+            <div class="qty-number">1</div>
+            <div class="qty-buttons">
+              <button class="qty-btn minus">−</button>
+              <button class="qty-btn plus">+</button>
+            </div>
+            <a href="registration.html"><button class="add-to-cart-btn">Добавить в корзину</button></a>
+          </div>
+        </div>
+      </div>
+      <!-- 4 -->
+      <div class="product-card" data-base-old="500" data-base-new="375">
+        <div class="product-img">
+          <div class="img-wrapper" data-images="img/9987.970.webp, img/9988.970.webp, img/3812.970.webp">
+            <img src="img/9987.970.webp" alt="Ягодная пастила ассорти (облепиха, малина, чёрная смородина), 100 г">
+            <img src="img/25.png" alt="Скидка" class="discount-badge">
+            <div class="carousel-buttons">
+              <span class="carousel-btn active" data-index="0"></span>
+              <span class="carousel-btn" data-index="1"></span>
+              <span class="carousel-btn" data-index="2"></span>
+            </div>
+          </div>
+        </div>
+        <div class="product-desc">
+          <h2>Ягодная пастила ассорти (облепиха, малина, чёрная смородина), 100 г</h2>
+          <ul>
+            <li>Содержит — малина, облепиха, чёрная смородина</li>
+            <li>Пищевая ценность: 2 белки 3 жиры 28 углеводы 150 ккал</li>
+            <li>Срок годности: 6 месяцев</li>
+            <a href="#" class="Tochka">...</a>
+          </ul>
+        </div>
+        <div class="product-meta">
+          <div class="price-container">
+            <span class="old">500 ₽</span>
+            <span class="new">375 ₽</span>
+          </div>
+          <div class="qty-container">
+            <div class="qty-number">1</div>
+            <div class="qty-buttons">
+              <button class="qty-btn minus">−</button>
+              <button class="qty-btn plus">+</button>
+            </div>
+            <a href="registration.html"><button class="add-to-cart-btn">Добавить в корзину</button></a>
+          </div>
+        </div>
+      </div>
+      <!-- 5 -->
+      <div class="product-card" data-base-old="2300" data-base-new="1840">
+        <div class="product-img">
+          <div class="img-wrapper" data-images="img/14576.970.webp, img/14577.970.webp, img/14578.970.webp, img/14575.970.webp">
+            <img src="img/14576.970.webp" alt="Кедровая комета с клюквой, 120 г — 5 коробок">
+            <img src="img/20p.png" alt="Скидка" class="discount-badge">
+            <div class="carousel-buttons">
+              <span class="carousel-btn active" data-index="0"></span>
+              <span class="carousel-btn" data-index="1"></span>
+              <span class="carousel-btn" data-index="2"></span>
+              <span class="carousel-btn" data-index="3"></span>
+            </div>
+          </div>
+        </div>
+        <div class="product-desc">
+          <h2>Кедровая комета с клюквой, 120 г — 5 коробок</h2>
+          <ul>
+            <li>Бренд — Кедровая комета</li>
+            <li>Пищевая ценность: 6 белки 30 жиры 50 углеводы 500 ккал</li>
+            <li>Срок годности: 6 месяцев</li>
+            <a href="#" class="Tochka">...</a>
+          </ul>
+        </div>
+        <div class="product-meta">
+          <div class="price-container">
+            <span class="old">2 300 ₽</span>
+            <span class="new">1 840 ₽</span>
+          </div>
+          <div class="qty-container">
+            <div class="qty-number">1</div>
+            <div class="qty-buttons">
+              <button class="qty-btn minus">−</button>
+              <button class="qty-btn plus">+</button>
+            </div>
+            <a href="registration.html"><button class="add-to-cart-btn">Добавить в корзину</button></a>
+          </div>
+        </div>
+      </div>
+      <!-- 6 -->
+      <div class="product-card" data-base-old="1600" data-base-new="1280">
+        <div class="product-img">
+          <div class="img-wrapper" data-images="img/3206.970.webp, img/3202.970.webp, img/3200.970.webp, img/3201.970.webp">
+            <img src="img/3206.970.webp" alt="Кедровое масло, 250 мл">
+            <img src="img/20p.png" alt="Скидка" class="discount-badge">
+            <div class="carousel-buttons">
+              <span class="carousel-btn active" data-index="0"></span>
+              <span class="carousel-btn" data-index="1"></span>
+              <span class="carousel-btn" data-index="2"></span>
+              <span class="carousel-btn" data-index="3"></span>
+            </div>
+          </div>
+        </div>
+        <div class="product-desc">
+          <h2>Кедровое масло, 250 мл</h2>
+          <ul>
+            <li>Добавки — без добавок</li>
+            <li>Пищевая ценность: 0 белки 100 жиры 0 углеводы 900 ккал</li>
+            <li>Срок годности: 8 месяцев</li>
+            <a href="#" class="Tochka">...</a>
+          </ul>
+        </div>
+        <div class="product-meta">
+          <div class="price-container">
+            <span class="old">1 600 ₽</span>
+            <span class="new">1 280 ₽</span>
+          </div>
+          <div class="qty-container">
+            <div class="qty-number">1</div>
+            <div class="qty-buttons">
+              <button class="qty-btn minus">−</button>
+              <button class="qty-btn plus">+</button>
+            </div>
+            <a href="registration.html"><button class="add-to-cart-btn">Добавить в корзину</button></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-left">
+      © healthyfood.ru<br>
+       <a href="mailto:info@healthyfood.ru">info@healthyfood.ru</a>
+    </div>
+    <div class="footer-right">
+      Наши Соц.Сети:
+      <div class="social-icons">
+        <a href="#" class="social vk"></a>
+        <a href="#" class="social youtube"></a>
+        <a href="#" class="social telegram"></a>
+        <a href="#" class="social discord"></a>
+      </div>
+    </div>
+  </footer>
+<script>
+  document.querySelectorAll('.btn-filter').forEach(btn => {
+    btn.addEventListener('click', function(e) {
+      if (e.target.classList.contains('grid-icon') {
+        document.querySelector('.products').classList.add('grid-view');
+        document.querySelector('.products').classList.remove('list-view');
+      } else if (e.target.classList.contains('list-icon')) {
+        document.querySelector('.products').classList.add('list-view');
+        document.querySelector('.products').classList.remove('grid-view');
+      }
+    });
+  });
+</script>
+  <script>
+    const products = document.querySelectorAll('.product-card');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('appear');
+      });
+    }, { threshold: 0.2 });
+    products.forEach(card => observer.observe(card));
+  </script>
+  <script src="index.js"></script>
+<script>
+  // Сохраняем исходный порядок товаров при загрузке страницы
+  document.addEventListener('DOMContentLoaded', function() {
+    window.originalOrder = Array.from(document.querySelectorAll('.product-card'));
+  });
+</script>
+</body>
+</html>

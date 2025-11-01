@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Профиль пользователя</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+  <div class="page-bg"></div>
+
+  <header>
+    <nav class="top-nav">
+      <ul>
+        <li><a href="index.html" class="nav-btn">Главная</a></li>
+        <li><a href="shop.html" class="nav-btn">Магазин</a></li>
+        <li><a href="ForumGl.html" class="nav-btn">Форум</a></li>
+        <li><a href="News.html" class="nav-btn">Новости</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="profile-container">
+    <aside class="friends-panel">
+      <h2>Друзья</h2>
+      <div class="friend-item"><img src="img/dd4475976331b536ef16776aa9d7e22f.jpg" alt=""><span>HealthyHarvest</span></div>
+      <div class="friend-item"><img src="img/9jcdtctfk8kykk1tnb1c0wlauqhztoat.webp" alt=""><span>StormCaster</span></div>
+      <div class="friend-item"><img src="img/1plytww9MwQ.jpg" alt=""><span>VeggieMaster</span></div>
+    </aside>
+
+    <section class="profile-main">
+      <div class="avatar-edit-group">
+        <img src="img/ава.png" alt="Аватар" class="avatar">
+        <div class="edit-icon"><img src="img/сменаавы.png" alt="Редактировать"></div>
+      </div>
+      
+      <div class="credentials">
+        <div class="field">
+          <input type="text" placeholder="Логин">
+          <div class="toggle-pass"><img src="img/глаз 1.png" alt="Показать"></div>
+        </div>
+        <div class="field">
+          <input type="password" placeholder="Пароль">
+          <div class="toggle-pass"><img src="img/глаз 1.png" alt="Показать"></div>
+        </div>
+        <button class="edit-btn">Изменить данные</button>
+      </div>
+    </section>
+
+    <aside class="cart-panel">
+      <h2>Корзина</h2>
+      <div class="cart-item">
+        <img src="img/3206.970.webp" alt="">
+        <div class="info">
+          <b>Кедровое масло, 250 мл</b><br>
+          • Добавки — без добавок<br>
+          • Пищевая ценность: 0 белки 100 жиры 0 углеводы 900 ккал<br>
+          • Срок годности: 8 месяцев
+        </div>
+        <div class="price">2 560 ₽</div>
+        <div class="qty">2 шт.</div>
+      </div>
+      <div class="cart-item">
+        <img src="img/14576.970.webp" alt="">
+        <div class="info">
+          <b>Кедровая комета с клюквой, 120 г — 5 коробок</b><br>
+          • Бренд — Кедровая комета<br>
+          • Пищевая ценность: 6 белки 30 жиры 50 углеводы 500 ккал<br>
+          • Срок годности: 6 месяцев
+        </div>
+        <div class="price">1 840 ₽</div>
+        <div class="qty">1 шт.</div>
+      </div>
+      <div class="cart-item">
+        <img src="img/6799054703.webp" alt="">
+        <div class="info">
+          <b>Земляника в молочном шоколаде без сахара, 100 г</b><br>
+          • Бренд — Сибирский кедр<br>
+          • Пищевая ценность: 4 белки 26 жиры 55 углеводы 470 ккал<br>
+          • Срок годности: 6 месяцев
+        </div>
+        <div class="price">1 440 ₽</div>
+        <div class="qty">4 шт.</div>
+      </div>
+      
+      <!-- Блок с итоговой суммой -->
+      <div class="cart-total">
+        <strong>Итого: <span id="total-amount">0</span> ₽</strong>
+      </div>
+      
+      <button class="pay-btn">Оплатить покупки</button>
+    </aside>
+  </main>
+
+  <footer>
+    <div class="footer-left">
+      © healthyfood.ru<br>
+      <a href="mailto:info@healthyfood.ru">info@healthyfood.ru</a>
+    </div>
+    <div class="footer-right">
+      Наши Соц.Сети:
+      <div class="social-icons">
+        <a href="#" class="social vk"></a>
+        <a href="#" class="social youtube"></a>
+        <a href="#" class="social telegram"></a>
+        <a href="#" class="social discord"></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="profile.js"></script>
+</body>
+</html>

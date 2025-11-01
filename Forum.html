@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Обсуждение на форуме</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="Forum.css">
+</head>
+<body>
+  <div class="page-bg"></div>
+
+  <header>
+    <nav class="top-nav">
+      <a href="profile.html" class="user-btn">
+        <img src="img/ава.png" alt="Профиль">
+      </a>
+      <ul>
+        <li><a href="index.html" class="nav-btn">Главная</a></li>
+        <li><a href="shop.html" class="nav-btn">Магазин</a></li>
+        <li><a href="ForumGl.html" class="nav-btn">Форум</a></li>
+        <li><a href="News.html" class="nav-btn">Новости</a></li>
+      </ul>
+      <a href="basket.html" class="cart-btn">
+        <img src="img/тележка.png" alt="Корзина">
+      </a>
+    </nav>
+  </header>
+
+<a href="ForumGl.html" class="back-btn-img">
+  <img src="img/назад.png" alt="Назад" style="width:100%; height:100%; object-fit:contain;">
+</a>
+
+  <main class="forum-main">
+    <section class="forum-thread">
+      <div class="post-container">
+        <div class="user-info">
+          <img src="img/9jcdtctfk8kykk1tnb1c0wlauqhztoat.webp" alt="avatar" class="avatar">
+          <div class="author">StormCaster</div>
+        </div>
+        <div class="post">
+          <p>Какие продукты обязательно должны быть в рационе у того, кто хочет перейти на полностью органическое питание?</p>
+        </div>
+      </div>
+      <div class="post-container">
+        <div class="user-info">
+          <img src="img/dd4475976331b536ef16776aa9d7e22f.jpg" alt="avatar" class="avatar">
+          <div class="author">HealthyHarvest</div>
+        </div>
+        <div class="post">
+          <p>Обязательно надо включить: сезонные овощи и фрукты, фермерские яйца, цельные злаки и бобовые. Особое внимание уделяем зелени - шпинат, руккола, петрушка. Не забывайте про органические кисломолочные продукты без добавок.</p>
+        </div>
+      </div>
+      <div class="post-container">
+        <div class="user-info">
+          <img src="img/9jcdtctfk8kykk1tnb1c0wlauqhztoat.webp" alt="avatar" class="avatar">
+          <div class="author">StormCaster</div>
+        </div>
+        <div class="post">
+          <p>А как насчёт сладостей? Является ли это ПП? Вот, например, этот мармелад - подойдёт?</p>
+          <div class="img-container">
+            <img src="img/7185292296.webp" alt="Мармелад «Глинтвейн», 165 г — бруснично-вишнёвый">
+          </div>
+        </div>
+      </div>
+      <div class="post-container">
+        <div class="user-info">
+          <img src="img/dd4475976331b536ef16776aa9d7e22f.jpg" alt="avatar" class="avatar">
+          <div class="author">HealthyHarvest</div>
+        </div>
+        <div class="post">
+          <p>Такой мармелад сделан из фруктовых соков и пектина без искусственных красителей. Главное проверять сертификацию - ищите маркировки "Био" или "Органик". В умеренных количествах такие сладости вполне допустимы.</p>
+        </div>
+      </div>
+      <div class="post-container">
+        <div class="user-info">
+          <img src="img/1plytww9MwQ.jpg" alt="avatar" class="avatar">
+          <div class="author">VeggieMaster</div>
+        </div>
+        <div class="post">
+          <p>Кстати, в нашем магазине как раз появилась новая партия органических сладостей, включая этот мармелад. Все продукты имеют европейские сертификаты качества.</p>
+        </div>
+      </div>
+      <div class="post-container">
+        <div class="user-info">
+          <img src="img/1plytww9MwQ.jpg" alt="avatar" class="avatar">
+          <div class="author">VeggieMaster</div>
+        </div>
+        <div class="post">
+          <p>Рекомендую также попробовать органический мёд и сухофрукты без обработки серой - они станут отличной заменой обычным десертам.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <section class="forum-input">
+    <a href="registration.html" class="btn-icon attach-btn"><img src="img/скрепка.png" alt="Прикрепить"></a>
+    <input type="text" class="message-input" placeholder="Сообщение ..." onclick="window.location.href='registration.html'">
+    <a href="registration.html" class="btn-icon send-btn"><img src="img/отправить.png" alt="Отправить"></a>
+  </section>
+
+  <footer>
+    <div class="footer-left">
+      © healthyfood.ru<br>
+      <a href="mailto:info@healthyfood.ru">info@healthyfood.ru</a>
+    </div>
+    <div class="footer-right">
+      Наши Соц.Сети:
+      <div class="social-icons">
+        <a href="#" class="social vk"></a>
+        <a href="#" class="social youtube"></a>
+        <a href="#" class="social telegram"></a>
+        <a href="#" class="social discord"></a>
+      </div>
+    </div>
+  </footer>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const posts = document.querySelectorAll('.post-container');
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('appear');
+          }
+        });
+      }, { threshold: 0.1 });
+
+      posts.forEach(post => observer.observe(post));
+    });
+</script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const posts = document.querySelectorAll('.post-container');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('appear');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    posts.forEach(post => observer.observe(post));
+
+    document.querySelectorAll('.back-btn-img, .attach-btn, .send-btn').forEach(btn => {
+      btn.addEventListener('mousedown', function() {
+        this.classList.add('active');
+      });
+      
+      btn.addEventListener('mouseup', function() {
+        this.classList.remove('active');
+      });
+      
+      btn.addEventListener('mouseleave', function() {
+        this.classList.remove('active');
+      });
+    });
+  });
+</script>
+</body>
+</html>

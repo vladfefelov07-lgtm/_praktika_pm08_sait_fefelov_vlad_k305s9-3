@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Выбор способа оплаты</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="opalate.css">
+</head>
+<body>
+  <div class="page-bg"></div>
+
+  <header>
+    <nav class="top-nav">
+      <a href="profile.html" class="user-btn">
+        <img src="img/ава.png" alt="Профиль">
+      </a>
+      <ul>
+        <li><a href="index.html" class="nav-btn">Главная</a></li>
+        <li><a href="shop.html" class="nav-btn">Магазин</a></li>
+        <li><a href="ForumGl.html" class="nav-btn">Форум</a></li>
+        <li><a href="News.html" class="nav-btn">Новости</a></li>
+      </ul>
+      <a href="basket.html" class="cart-btn">
+        <img src="img/тележка.png" alt="Корзина">
+      </a>
+    </nav>
+  </header>
+
+  <main class="payment-page">
+    <h1 class="payment-title">Выберите способ оплаты</h1>
+    
+    <div class="payment-options">
+      <div class="payment-option">
+        <img src="img/5a548319ce7e1a36b2df 1.png" alt="Visa">
+      </div>
+      <div class="payment-option">
+        <img src="img/5a548319ce7e1a36b2df 2.png" alt="MasterCard">
+      </div>
+      <div class="payment-option">
+        <img src="img/5a548319ce7e1a36b2df 6.png" alt="МИР">
+      </div>
+      <div class="payment-option">
+        <img src="img/5a548319ce7e1a36b2df 3.png" alt="PayPal">
+      </div>
+      <div class="payment-option">
+        <img src="img/5a548319ce7e1a36b2df 4.png" alt="Qiwi">
+      </div>
+      <div class="payment-option">
+        <img src="img/5a548319ce7e1a36b2df 5.png" alt="ЮMoney">
+      </div>
+    </div>
+  </main>
+
+  <div class="overlay" id="overlay">
+    <div class="payment-form">
+      <div class="form-close">×</div>
+      <input type="text" placeholder="Введите номер карты" class="message-input">
+      <button class="submit-btn" id="submitPayment">Отправить</button>
+    </div>
+  </div>
+
+  <div class="thank-you-message" id="thankYouMessage">
+    Спасибо за покупку!
+  </div>
+
+  <footer>
+    <div class="footer-left">
+      © healthyfood.ru<br>
+      <a href="mailto:info@healthyfood.ru">info@healthyfood.ru</a>
+    </div>
+    <div class="footer-right">
+      Наши Соц.Сети:
+      <div class="social-icons">
+        <a href="#" class="social vk"></a>
+        <a href="#" class="social youtube"></a>
+        <a href="#" class="social telegram"></a>
+        <a href="#" class="social discord"></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="opalate.js"></script>
+</body>
+</html>

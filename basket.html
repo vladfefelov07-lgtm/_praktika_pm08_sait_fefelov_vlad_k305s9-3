@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Корзина - healthyfood</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="basket.css">
+</head>
+<body>
+  <!-- Фоновая картинка -->
+  <div class="page-bg"></div>
+
+  <header>
+    <nav class="top-nav">
+      <a href="profile.html" class="user-btn">
+        <img src="img/ава.png" alt="Профиль">
+      </a>
+      <ul>
+        <li><a href="index.html" class="nav-btn">Главная</a></li>
+        <li><a href="shop.html" class="nav-btn">Магазин</a></li>
+        <li><a href="ForumGl.html" class="nav-btn">Форум</a></li>
+        <li><a href="News.html" class="nav-btn">Новости</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="basket-container">
+    <div class="product-display">
+      <!-- Левая боковая картинка -->
+      <div class="side-product left">
+        <div class="product-frame">
+          <img src="img/7086317409.webp" alt="Дополнительный товар">
+        </div>
+      </div>
+
+      <!-- Центральный блок с навигацией -->
+      <div class="main-product">
+        <!-- Стрелка назад -->
+        <button class="nav-button prev" aria-label="Предыдущий товар" data-direction="prev">
+          <div class="nav-circle">
+            <img src="img/Font_Awesome_5_solid_chevron-circle-right.svg 2.png" alt="Назад">
+          </div>
+        </button>
+
+        <!-- Основной товар -->
+        <div class="product-frame main">	
+          <img src="img/7185292296.webp" alt="Катушка рыболовная" class="main-product-image">
+        </div>
+
+        <!-- Стрелка вперед -->
+        <button class="nav-button next" aria-label="Следующий товар" data-direction="next">
+          <div class="nav-circle">
+            <img src="img/Font_Awesome_5_solid_chevron-circle-right.svg 2 — копия.png" alt="Вперед">
+          </div>
+        </button>
+      </div>
+
+      <!-- Правая боковая картинка -->
+      <div class="side-product right">
+        <div class="product-frame">
+          <img src="img/7342795353.webp" alt="Дополнительный товар">
+        </div>
+      </div>
+    </div>
+
+    <!-- Блок с ценой и количеством -->
+    <div class="product-controls">
+      <div class="price-container">
+        <span class="price">4 800 ₽</span>
+      </div>
+      
+      <div class="quantity-control">
+        <button class="qty-btn minus">−</button>
+        <div class="qty-number">2</div>
+        <button class="qty-btn plus">+</button>
+      </div>
+    </div>
+
+    <!-- Кнопка оплаты -->
+    <a href="opalate.html" class="checkout-btn">Оплата</a>
+  </main>
+
+  <footer>
+    <div class="footer-left">
+      © healthyfood.ru<br>
+      <a href="mailto:info@healthyfood.ru">info@healthyfood.ru</a>
+    </div>
+    <div class="footer-right">
+      Наши Соц.Сети:
+      <div class="social-icons">
+        <a href="#" class="social vk"></a>
+        <a href="#" class="social youtube"></a>
+        <a href="#" class="social telegram"></a>
+        <a href="#" class="social discord"></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="basket.js"></script>
+</body>
+</html>

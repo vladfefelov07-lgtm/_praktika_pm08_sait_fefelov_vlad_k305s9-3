@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Новости о здоровом питании</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="News.css">
+</head>
+<body>
+  <div class="page-bg"></div>
+
+  <header>
+    <nav class="top-nav">
+      <ul>
+        <li><a href="index.html" class="nav-btn">Главная</a></li>
+        <li><a href="shop.html" class="nav-btn">Магазин</a></li>
+        <li><a href="ForumGl.html" class="nav-btn">Форум</a></li>
+        <li><a href="News.html" class="nav-btn active">Новости</a></li>
+      </ul>
+      <a href="basket.html" class="cart-btn">
+        <img src="img/тележка.png" alt="Корзина">
+      </a>
+    </nav>
+  </header>
+
+  <main class="news-container">
+<section class="featured-news">
+  <article>
+    <div class="img-container">
+      <img src="img/0h5ZPt0QUZo.jpg" alt="Рыболовный фестиваль">
+    </div>
+    <h2>Российский рынок органических продуктов вырос на 25% в 2023 году</h2>
+    <p>
+	В Подмосковье запущен новый проект по выращиванию овощей с использованием биодинамических методов.
+        Первый урожай уже поступил в продажу в сети магазинов "Здоровая пища".
+    </p>
+    <a href="#" class="read-more">Читать дальше ....</a>
+    <div class="news-date">15.03.2024</div>
+  </article>
+</section>
+
+<section class="news-grid">
+  <div class="news-item-wrapper">
+    <div class="news-item-img-container">
+      <img src="img/ris11.png.webp" alt="Новость 1">
+    </div>
+    <article class="news-item">
+      <div class="news-content">
+        <p>
+           По данным Союза органического земледелия, рынок экологически чистых продуктов в России показал рекордный рост.
+           Основными факторами стали повышение потребительского спроса и поддержка государства в развитии органического сельского хозяйства.
+        </p>
+        <a href="#" class="read-more">Читать дальше ....</a>
+        <div class="news-date">28.02.2024</div>
+      </div>
+    </article>
+  </div>
+
+  <div class="news-item-wrapper">
+    <div class="news-item-img-container">
+      <img src="img/i (10).webp" alt="Новость 2">
+    </div>
+    <article class="news-item">
+      <div class="news-content">
+        <p>
+          Введена новая государственная система сертификации органической продукции.
+          Теперь покупатели могут быть уверены в качестве продуктов благодаря единому знаку соответствия.
+        </p>
+        <a href="#" class="read-more">Читать дальше ....</a>
+        <div class="news-date">10.01.2024</div>
+      </div>
+    </article>
+  </div>
+</section>
+  </main>
+
+  <footer>
+    <div class="footer-left">
+      © healthyfood.ru<br>
+      <a href="mailto:info@healthyfood.ru">info@healthyfood.ru</a>
+    </div>
+    <div class="footer-right">
+      Наши Соц.Сети:
+      <div class="social-icons">
+        <a href="#" class="social vk"></a>
+        <a href="#" class="social youtube"></a>
+        <a href="#" class="social telegram"></a>
+        <a href="#" class="social discord"></a>
+      </div>
+    </div>
+  </footer>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  function fadeInElements() {
+    const featuredNews = document.querySelector('.featured-news article');
+    const newsItems = document.querySelectorAll('.news-item-wrapper');
+  
+    featuredNews.style.opacity = '0';
+    featuredNews.style.transform = 'translateY(20px)';
+    featuredNews.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+    
+    newsItems.forEach((item, index) => {
+      item.style.opacity = '0';
+      item.style.transform = 'translateY(20px)';
+      item.style.transition = `opacity 0.5s ease ${0.3 + index * 0.2}s, transform 0.5s ease ${0.3 + index * 0.2}s`;
+    });
+    
+    setTimeout(() => {
+      featuredNews.style.opacity = '1';
+      featuredNews.style.transform = 'translateY(0)';
+      
+      newsItems.forEach(item => {
+        item.style.opacity = '1';
+        item.style.transform = 'translateY(0)';
+      });
+    }, 100);
+  }
+  
+  fadeInElements();
+  
+});
+</script>
+</body>
+</html>
